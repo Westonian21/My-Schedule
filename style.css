@@ -1,135 +1,104 @@
-/* File Creator: Weston Hood
-File Creation Date: Unknown
-Latest Revision: 29Sep2022
-File Version: v2.0
+/* 
+File Creator: Weston Hood
+File Assignment: My Schedule
+File Version: v1.0
+File Date: 29Sep22
 */
+
 
 /* Browser Resets */
 
 * {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
 /* Classes */
 
-.ProjectItem {
-    border: solid;
-    font-size: x-large;
-    border-radius: 5px;
-    background-color: #ffb41470;
-    text-align: center;
-    max-width: fit-content;
-    padding: 0.1em;
+.Bio {
+    background-color: rgba(144, 238, 144, 0.7);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.Blank {
+    background-color: rgb(104, 104, 104);
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    background-color: beige;
+    padding: 5px;
+}
+
+.Row1 {
+    background-color: rgb(240, 128, 128, 0.6);
+}
+
+.Row2 {
+    background-color: rgba(218, 240, 128, 0.6);
+}
+
+.Sleep {
+    background-color: rgba(0, 0, 139, 0.7);
+    color: lightgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.WebD {
+    background-color: rgba(221, 157, 19, 0.7);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.Work {
+    background-color: rgba(255, 0, 255, 0.7);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 /* Content */
 
-article {
-    margin: 1em;
-    border: solid;
-    border-radius: 1em;
-    background-color: rgba(168, 168, 168, 0.8);
-    padding: 0.5em;
-    max-width: fit-content;
-}
-
-ul {
-    font-size: larger;
-}
-
-header {
-    margin: 0.5em auto 0 auto;
-    background-color: rgba(0, 128, 128, 0.4);
-    border-radius: 1em;
-    max-width: fit-content;
-    padding: 0.25em 1.25em 0.25em 0.5em;
-}
-
-section {
-    margin: 0.5em;
-    padding: 15px;
-    background-color: rgba(168, 168, 168, 0.8);
-    border-radius: 1em;
-    border: 2px solid;
-    max-width: fit-content;
-}
-
-nav {
-    border: solid;
-    border-radius: 1em;
-    background-color: #66ffff;
-    margin: 10px;
-
-}
-
 body {
-    background-image: url(pexels-eberhard-grossgasteiger-1287145.jpg);
-    /* background: fixed; */
-    background-size: 130%;
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-table {
-    width: 100%;
-    text-align: center;
+    background-image: url(schedule.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
     text-align: center;
-    font-size: 3em;
-    font-family: 'Lucida Handwriting';
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    padding: 10px;
-    background-color: white;
+header {
+    background-color: aqua;
 }
 
-h2 {
-    font-family: Verdana;
-    font-size: xx-large;
-    font-weight: normal;
-}
-
-h3 {
-    font-size: x-large;
-}
-
-h4 {
-    font-size: larger;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:has(h4) {
-    text-decoration: underline;
-    color: rgb(85, 7, 136);
-}
-
-p {
-    font-size: x-large;
+table {
+    margin: 50px auto;
+    border: 2px maroon solid;
+    text-align: center;
+    border-radius: 5px;
 }
 
 th {
-    font-size: 1.5em;
+    min-width: 6em;
 }
 
-.zoom-box {
-    background-color: #CF4B32;
-    width: 100px;
-    height: 100px;
-    margin: 32px auto;
-    transition: transform .2s;
-    /* Animation */
+/* Parent Selectors */
+
+div:has(img) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 
-.zoom-box:hover {
-    transform: scale(1.5);
+td:nth-child(1) {
+    background-color: rgb(167, 151, 151);
+}
+
+tr:has(th) {
+    font-family: Arial, Helvetica, sans-serif;
 }
